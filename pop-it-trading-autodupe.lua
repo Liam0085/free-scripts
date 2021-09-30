@@ -1,6 +1,8 @@
 repeat wait()
 until game:IsLoaded()
 
+wait(1)
+
 function Get_Board()
     for i,v in pairs(workspace.Boards:GetChildren()) do
         if v.Player1.Value == nil and v.Player2.Value == nil then
@@ -38,5 +40,5 @@ wait()
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(board.MAIN.CFrame.X, board.MAIN.CFrame.Y + 15, board.MAIN.CFrame.Z + 10)
 Drop(15)
-wait(15)
+wait(1)
 Dupe(board)
