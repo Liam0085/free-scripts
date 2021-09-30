@@ -1,3 +1,6 @@
+repeat wait()
+until game:IsLoaded()
+
 function Get_Board()
     for i,v in pairs(workspace.Boards:GetChildren()) do
         if v.Player1.Value == nil and v.Player2.Value == nil then
